@@ -11,8 +11,19 @@
     header { padding: 2.5rem 1rem 1rem; text-align: center; }
     main { max-width: 860px; margin: 0 auto; padding: 1rem; }
     h1,h2,h3 { line-height: 1.2; }
-    nav { background: #f6f6f7; padding: .75rem 1rem; border-block: 1px solid #e5e5e6; }
-    nav a { margin-right: .75rem; }
+    /* ⬇️ Center the nav items */
+    nav {
+      background: #f6f6f7;
+      padding: .75rem 1rem;
+      border-block: 1px solid #e5e5e6;
+      display: flex;
+      justify-content: center;   /* center horizontally */
+      align-items: center;
+      gap: 1rem;                  /* spacing between items */
+      flex-wrap: wrap;            /* wrap on small screens */
+      text-align: center;
+    }
+    nav a { text-decoration: none; }
     ul { padding-left: 1.2rem; }
     footer { padding: 2rem 1rem; text-align: center; opacity: .75; }
     small.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
@@ -24,7 +35,7 @@
     <p class="subtitle">for <strong>Islamic Literature Library</strong></p>
     <p><small class="mono">Effective date: 01 Oct 2025</small></p>
   </header>
-<center>
+
   <nav>
     <a href="#who">Who we are</a>
     <a href="#collect">What we collect</a>
@@ -38,7 +49,7 @@
     <a href="#changes">Changes</a>
     <a href="#contact">Contact</a>
   </nav>
-</center>
+
   <main>
     <section id="who">
       <h2>Who we are</h2>
